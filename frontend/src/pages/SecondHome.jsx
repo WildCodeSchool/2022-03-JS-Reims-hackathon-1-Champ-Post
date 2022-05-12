@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Map from "../components/Map";
 
-export default function Home() {
+export default function SecondHome() {
   return (
     <>
       <Link to="/panel">
@@ -20,6 +20,7 @@ export default function Home() {
         <img src="src/assets/badge/pigeon.png" alt="badge pigeon" />
         <img src="src/assets/badge/lune.png" alt="badge lune" />
         <img src="src/assets/badge/feuille.png" alt="badge feuille" />
+        <img src="src/assets/badge/arbre.png" alt="badge arbre" />
       </div>
       <img
         src="src/assets/badge/badgecheck.png"
@@ -29,7 +30,7 @@ export default function Home() {
       <div className="badgenocheck">
         <img src="src/assets/badge/poussin.png" alt="badge poussin" />
         <img src="src/assets/badge/hibou.png" alt="badge hibou" />
-        <img src="src/assets/badge/arbre.png" alt="badge arbre" />
+        <img src="src/assets/badge/tournesol.png" alt="badge tournesol" />
       </div>
       <img
         src="src/assets/badge/badgenocheck.png"
@@ -39,21 +40,25 @@ export default function Home() {
       <p>Historique</p>
       <div className="histoirearray">
         <table>
-          <tr>
-            <td>Date</td>
-            <td>Quantités</td>
-            <td>Lieu</td>
-          </tr>
-          <tr>
-            <td> 01/05 </td>
-            <td> 350 G </td>
-            <td> REIMS </td>
-          </tr>
-          <tr>
-            <td>11/03</td>
-            <td>800 G</td>
-            <td>REIMS</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Quantités</th>
+              <th>Lieu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> 01/05 </td>
+              <td> 350 G </td>
+              <td> REIMS </td>
+            </tr>
+            <tr>
+              <td>11/03</td>
+              <td>800 G</td>
+              <td>REIMS</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <p>Où nous trouver ?</p>

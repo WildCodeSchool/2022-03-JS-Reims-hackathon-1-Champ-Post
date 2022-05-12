@@ -8,7 +8,7 @@ export default function QrCode() {
       <div className="divcam">
         <Webcam className="cam" width={300} />
       </div>
-      <Link to="/">
+      <Link to="/home">
         <div className="hitbox" />
       </Link>
     </>
