@@ -208,27 +208,34 @@ export default function Compost() {
   return (
     <>
       <label htmlFor="search-bar">
-        Rechercher :
-        <input
-          id="search-bar"
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <br />
-        Compostable :
-        <input
-          type="checkbox"
-          checked={checkedValid}
-          onChange={handleChangeValid}
-        />
-        <br />
-        Non Compostable :
-        <input
-          type="checkbox"
-          checked={checkedNotValid}
-          onChange={handleChangeNotValid}
-        />
+        <div className="trichecentre">
+          <input
+            id="search-bar"
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+        <div className="check">
+          <div>
+            Valide
+            <input
+              className="checkandtitle"
+              type="checkbox"
+              checked={checkedValid}
+              onChange={handleChangeValid}
+            />
+          </div>
+          <div>
+            Invalide
+            <input
+              className="checkandtitle"
+              type="checkbox"
+              checked={checkedNotValid}
+              onChange={handleChangeNotValid}
+            />
+          </div>
+        </div>
       </label>
       <div className="trichecentre">
         <div className="allcomp">
