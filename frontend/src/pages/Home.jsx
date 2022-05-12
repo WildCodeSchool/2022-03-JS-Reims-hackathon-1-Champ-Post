@@ -4,7 +4,6 @@ import Map from "../components/Map";
 export default function Home() {
   return (
     <>
-      <img src="/src/assets/147142.png" alt="avatar" className="avatar" />
       <Link to="qrcode">
         <img
           src="/src/assets/Screenshot_2022-05-12_at_15-10-01_Barcode_Scanner_Icon_Images___Parcourir_13_189_le_catalogue_de_photos_vecteurs_et_vidéos-removebg-preview.png"
@@ -12,8 +11,11 @@ export default function Home() {
           className="qrcode"
         />
       </Link>
-      <progress max="100" value="75" />
-      <p>Maitre du Compostage</p>
+      <div className="top-home">
+        <img src="/src/assets/147142.png" alt="avatar" className="avatar" />
+        <progress max="100" value="75" />
+        <p>Maitre du Compostage</p>
+      </div>
       <div className="badgecheck">
         <img src="src/assets/badge/pigeon.png" alt="badge pigeon" />
         <img src="src/assets/badge/lune.png" alt="badge lune" />
@@ -55,7 +57,9 @@ export default function Home() {
         </table>
       </div>
       <p>Où nous trouver ?</p>
-      <Map />
+      <div className="trichecentre2">
+        <Map />
+      </div>
     </>
   );
 }
