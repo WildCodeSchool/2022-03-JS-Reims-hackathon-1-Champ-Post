@@ -4,14 +4,18 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import QrCode from "./components/QrCode";
+import SecondHome from "./pages/SecondHome";
+import Panel from "./pages/Panel";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="compost" element={<Compost />} />
-        <Route path="qrCode" element={<QrCode />} />
+        <Route path="/home" element={<SecondHome />} />
+        <Route path="/compost" element={<Compost />} />
+        <Route path="/qrCode" element={<QrCode />} />
+        <Route path="/panel" element={<Panel />} />
       </Routes>
       <Navbar />
     </Router>

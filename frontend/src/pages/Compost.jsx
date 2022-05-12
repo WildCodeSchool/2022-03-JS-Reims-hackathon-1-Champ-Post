@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const compostValid = [
   {
@@ -207,6 +208,9 @@ export default function Compost() {
 
   return (
     <>
+      <Link to="/">
+        <img src="src/assets/logo1.png" alt="logo" />
+      </Link>
       <label htmlFor="search-bar">
         <div className="trichecentre">
           <input
