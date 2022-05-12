@@ -3,7 +3,7 @@ import { useState } from "react";
 const compostValid = [
   {
     number: 2,
-    title: "choux",
+    title: "agrumes",
     image: "src/assets/imgcompost/agrumes.png",
   },
   {
@@ -194,28 +194,61 @@ const compostNotValid = [
 
 export default function Compost() {
   const [search, setSearch] = useState("");
+  const [checkedValid, setCheckedValid] = useState(true);
+  const [checkedNotValid, setCheckedNotValid] = useState(true);
+
+  const handleChangeValid = () => {
+    setCheckedValid(!checkedValid);
+  };
+
+  const handleChangeNotValid = () => {
+    setCheckedNotValid(!checkedNotValid);
+  };
 
   return (
     <>
       <label htmlFor="search-bar">
-        Rechercher
+        Rechercher :
         <input
           id="search-bar"
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
+        <br />
+        Compostable :
+        <input
+          type="checkbox"
+          checked={checkedValid}
+          onChange={handleChangeValid}
+        />
+        <br />
+        Non Compostable :
+        <input
+          type="checkbox"
+          checked={checkedNotValid}
+          onChange={handleChangeNotValid}
+        />
       </label>
+      <br />
       {compostValid
-        .filter((comp) => comp.title.includes(search))
+        .filter((comp) => checkedValid && comp.title.includes(search))
         .map((compost) => (
-          <img src={compost.image} alt={compost.title} />
+          <img
+            className="imgCompostOk"
+            src={compost.image}
+            alt={compost.title}
+          />
         ))}
       <br />
       {compostNotValid
-        .filter((comp) => comp.title.includes(search))
+        .filter((comp) => checkedNotValid && comp.title.includes(search))
         .map((compost) => (
-          <img src={compost.image} alt={compost.title} />
+          <img
+            className="imgCompostOk"
+            src={compost.image}
+            alt={compost.title}
+          />
         ))}
     </>
   );
