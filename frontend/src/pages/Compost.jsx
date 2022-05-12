@@ -230,26 +230,36 @@ export default function Compost() {
           onChange={handleChangeNotValid}
         />
       </label>
-      <br />
-      {compostValid
-        .filter((comp) => checkedValid && comp.title.includes(search))
-        .map((compost) => (
-          <img
-            className="imgCompostOk"
-            src={compost.image}
-            alt={compost.title}
-          />
-        ))}
-      <br />
-      {compostNotValid
-        .filter((comp) => checkedNotValid && comp.title.includes(search))
-        .map((compost) => (
-          <img
-            className="imgCompostOk"
-            src={compost.image}
-            alt={compost.title}
-          />
-        ))}
+      <div className="trichecentre">
+        <div className="allcomp">
+          <ul className="licomp">
+            {compostValid
+              .filter((comp) => checkedValid && comp.title.includes(search))
+              .map((compost) => (
+                <li>
+                  <img
+                    className="imgCompostOk"
+                    src={compost.image}
+                    alt={compost.title}
+                  />
+                </li>
+              ))}
+          </ul>
+          <ul className="licomp">
+            {compostNotValid
+              .filter((comp) => checkedNotValid && comp.title.includes(search))
+              .map((compost) => (
+                <li>
+                  <img
+                    className="imgCompostOk"
+                    src={compost.image}
+                    alt={compost.title}
+                  />
+                </li>
+              ))}
+          </ul>
+        </div>
+      </div>
     </>
   );
 }
