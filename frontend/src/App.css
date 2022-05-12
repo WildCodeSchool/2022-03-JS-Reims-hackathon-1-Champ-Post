@@ -71,3 +71,26 @@ li {
 .qrcode {
   width: 20vw;
 }
+.avatar {
+  width: 30vw;
+}
+.badgecheck {
+  border: solid black 1px;
+  background-color: #e5e5e5;
+}
+.badgenocheck {
+  filter: grayscale(1);
+  border: solid black 1px;
+  background-color: #e5e5e5;
+}
+
+.imgbadgecheck {
+  width: 30vw;
+}
+.imgbadgenocheck {
+  width: 30vw;
+}
+table td {
+  background-color: #e5e5e5;
+  border: solid black 1px;
+}
