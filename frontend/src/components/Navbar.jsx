@@ -17,6 +17,9 @@ function Navbar() {
           <li>
             <Link to="panel">suivi</Link>
           </li>
+          <li>
+            <Link to="qrcode">Scan</Link>
+          </li>
         </ul>
       </div>
     </nav>
