@@ -10,8 +10,10 @@
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "leaflet": "^1.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-leaflet": "^3.2.5",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
