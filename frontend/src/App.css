@@ -1,16 +1,16 @@
+#root{
+    background: rgb(245,250,225);
+    background: radial-gradient(circle, rgba(245,250,225,1) 0%, rgba(183,201,147,1) 89%);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    background: rgb(245,250,225);
-    background: radial-gradient(circle, rgba(245,250,225,1) 0%, rgba(197,219,44,1) 45%, rgba(183,201,147,1) 99%);
-}
-
 .allcomp{
     background-color: white;
-    width: 90%;
+    width: 80%;
     border: 3px solid black;
     border-radius: 10px;
     min-height: 100vh;
