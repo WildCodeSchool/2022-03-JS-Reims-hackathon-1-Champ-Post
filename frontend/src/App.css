@@ -1,7 +1,11 @@
-body{
-    background: rgb(245,250,225);
-    background: radial-gradient(circle, rgba(245,250,225,1) 0%, rgba(183,201,147,1) 89%);
-    font-size: 1.5rem;
+body {
+  background: rgb(245, 250, 225);
+  background: radial-gradient(
+    circle,
+    rgba(245, 250, 225, 1) 0%,
+    rgba(183, 201, 147, 1) 89%
+  );
+  font-size: 1.5rem;
 }
 
 * {
@@ -17,23 +21,23 @@ body {
   font-family: "Montserrat", serif;
 }
 
-.check{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.check {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.checkandtitle{
-    margin-left: 1rem;
+.checkandtitle {
+  margin-left: 1rem;
 }
 
-.allcomp{
-    background-color: white;
-    width: 80%;
-    border: 3px solid black;
-    border-radius: 10px;
-    min-height: 100vh;
+.allcomp {
+  background-color: white;
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 10px;
+  min-height: 100vh;
 }
 
 .trichecentre {
@@ -76,10 +80,10 @@ li {
   list-style-type: none;
 }
 
-.licomp{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.licomp {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .qrcode {
@@ -109,4 +113,7 @@ li {
 table td {
   background-color: #e5e5e5;
   border: solid black 1px;
+}
+.badgeNotValid {
+  filter: grayscale(1);
 }
