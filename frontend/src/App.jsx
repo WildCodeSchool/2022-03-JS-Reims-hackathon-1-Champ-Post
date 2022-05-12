@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import QrCode from "./components/QrCode";
-import SecondHome from "@pages/SecondHome";
-import Panel from "@pages/Panel";
+import SecondHome from "./pages/SecondHome";
+import Panel from "./pages/Panel";
 
 function App() {
   return (
