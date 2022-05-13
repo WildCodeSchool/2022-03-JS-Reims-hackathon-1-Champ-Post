@@ -4,7 +4,7 @@ import Map from "../components/Map";
 export default function Home() {
   return (
     <>
-      <Link to="qrcode">
+      <Link to="/qrcode">
         <img
           src="/src/assets/Screenshot_2022-05-12_at_15-10-01_Barcode_Scanner_Icon_Images___Parcourir_13_189_le_catalogue_de_photos_vecteurs_et_vidéos-removebg-preview.png"
           alt="QR code scanner"
@@ -18,7 +18,7 @@ export default function Home() {
         <Link to="panel">
           <img src="/src/assets/147142.png" alt="avatar" className="avatar" />
         </Link>
-        <progress max="100" value="75" />
+        <progress max="100" value="65" />
         <p>Maitre du Compostage</p>
       </div>
       <Link to="panel">
@@ -45,7 +45,7 @@ export default function Home() {
         </span>
         <img src="src/assets/badge/hibou.png" alt="badge hibou" />
         <span className="hovertext" data-hover="5 compost (4/5)">
-          <img src="src/assets/badge/arbre.png" alt="badge arbre" />
+          <img src="src/assets/badge/bois.png" alt="badge arbre" />
         </span>
       </div>
       <img
@@ -64,17 +64,17 @@ export default function Home() {
             </tr>
             <tr>
               <td> 01/05 </td>
-              <td> 350 G </td>
+              <td> 351 G </td>
               <td> REIMS </td>
             </tr>
             <tr>
               <td>21/03</td>
-              <td>800 G</td>
+              <td>832 G</td>
               <td>REIMS</td>
             </tr>
             <tr>
               <td>30/01</td>
-              <td>600 G</td>
+              <td>607 G</td>
               <td>REIMS</td>
             </tr>
           </table>

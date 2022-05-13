@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Compost from "./pages/Compost";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 import "./App.css";
 import QrCode from "./components/QrCode";
 import SecondHome from "./pages/SecondHome";
@@ -17,7 +16,6 @@ function App() {
         <Route path="/qrCode" element={<QrCode />} />
         <Route path="/panel" element={<Panel />} />
       </Routes>
-      <Navbar />
     </Router>
   );
 }
