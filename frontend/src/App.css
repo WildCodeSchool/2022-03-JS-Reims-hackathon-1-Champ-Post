@@ -63,7 +63,7 @@ body {
 }
 
 .divcam {
-  margin-top: 10vh;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
 }
@@ -72,8 +72,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+}
+
+.logoComp{
+  width: 250px;
 }
 
 li {
@@ -88,32 +90,144 @@ li {
 
 .qrcode {
   width: 20vw;
+  position: absolute;
+  top : 20px;
+  right: 20px;
+}
+
+.dircom {
+  width: 12vw;
+  position: absolute;
+  top : 85px;
+  right: 33px;
 }
 
 .avatar {
   width: 30vw;
 }
 
-.badgecheck {
-  border: solid black 1px;
-  background-color: #e5e5e5;
-}
-.badgenocheck {
-  filter: grayscale(1);
-  border: solid black 1px;
-  background-color: #e5e5e5;
+progress{
+    margin: 1rem;
 }
 
-.imgbadgecheck {
-  width: 30vw;
+.top-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
-.imgbadgenocheck {
-  width: 30vw;
-}
-table td {
+
+.badgecheck {
+  border: solid black 2px;
+  border-radius: 10px;
   background-color: #e5e5e5;
-  border: solid black 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 2rem;
 }
+
+.badgenocheck {
+  filter: grayscale(1);
+  border-radius: 10px;
+  border: solid black 2px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+.trichecentre2{
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.map{
+    border: 3px black solid;
+}
+
+.imgbadgecheck, .imgbadgenocheck{
+  width: 20vw;
+}
+
+.imgbadgecheck{
+    position: absolute;
+    top : 220px;
+    right: 5px;
+}
+
+.imgbadgenocheck{
+    position: absolute;
+    top : 375px;
+    right: 0px;
+}
+
+.histo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phisto{
+  margin: 1rem;
+}
+
+td, table, th{
+  background-color: #e5e5e5;
+  border: solid black 2px;
+  padding: 3px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 .badgeNotValid {
   filter: grayscale(1);
+}
+
+.mapping{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pmapping{
+  margin-bottom: 1rem;
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }

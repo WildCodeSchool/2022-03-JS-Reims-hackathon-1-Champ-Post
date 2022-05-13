@@ -208,9 +208,11 @@ export default function Compost() {
 
   return (
     <>
-      <Link to="/">
-        <img src="src/assets/logo1.png" alt="logo" />
-      </Link>
+      <div className="trichecentre">
+        <Link to="/">
+          <img className="logoComp" src="src/assets/logo1.png" alt="logo" />
+        </Link>
+      </div>
       <label htmlFor="search-bar">
         <div className="trichecentre">
           <input
