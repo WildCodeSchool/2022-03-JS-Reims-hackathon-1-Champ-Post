@@ -1,52 +1,56 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const badgeValid = [
   {
-    title: "abeille",
-    image: "src/assets/badge/abeille.png",
+    title: "feuille",
+    image: "src/assets/badge/feuille.png",
+    hover: "Premier Compost",
   },
   {
-    title: "arbre",
-    image: "src/assets/badge/arbre.png",
+    title: "lune",
+    image: "src/assets/badge/lune.png",
+    hover: "Compost la nuit",
   },
   {
-    title: "arcenciel",
-    image: "src/assets/badge/arcenciel.png",
-  },
-  {
-    title: "bois",
-    image: "src/assets/badge/bois.png",
+    title: "poussin",
+    image: "src/assets/badge/poussin.png",
   },
   {
     title: "cocinelle",
     image: "src/assets/badge/cocinelle.png",
   },
   {
-    title: "eclair",
-    image: "src/assets/badge/eclair.png",
-  },
-  {
     title: "escargot",
     image: "src/assets/badge/escargot.png",
   },
-  {
-    title: "feuille",
-    image: "src/assets/badge/feuille.png",
-  },
+];
+const badgeNotValid = [
   {
     title: "hibou",
     image: "src/assets/badge/hibou.png",
   },
   {
-    title: "lune",
-    image: "src/assets/badge/lune.png",
+    title: "25 compost arbre",
+    image: "src/assets/badge/arbre.png",
+    hover: "25 Compost (4/25)",
   },
   {
     title: "margerite",
     image: "src/assets/badge/margerite.png",
   },
-];
-const badgeNotValid = [
+  {
+    title: "abeille",
+    image: "src/assets/badge/abeille.png",
+  },
+  {
+    title: "eclair",
+    image: "src/assets/badge/eclair.png",
+  },
+  {
+    title: "arcenciel",
+    image: "src/assets/badge/arcenciel.png",
+  },
   {
     title: "oeufs",
     image: "src/assets/badge/oeufs.png",
@@ -84,10 +88,6 @@ const badgeNotValid = [
     image: "src/assets/badge/pommier.png",
   },
   {
-    title: "poussin",
-    image: "src/assets/badge/poussin.png",
-  },
-  {
     title: "sapin",
     image: "src/assets/badge/sapin.png",
   },
@@ -102,6 +102,10 @@ const badgeNotValid = [
   {
     title: "tulipe",
     image: "src/assets/badge/tulipe.png",
+  },
+  {
+    title: "bois",
+    image: "src/assets/badge/bois.png",
   },
 ];
 
@@ -120,6 +124,11 @@ export default function Panel() {
 
   return (
     <>
+      <div className="trichecentre">
+        <Link to="/">
+          <img className="logoComp" src="src/assets/logo1.png" alt="logo" />
+        </Link>
+      </div>
       <label htmlFor="badgesearch-bar">
         <div className="trichecentre">
           <input
@@ -131,7 +140,7 @@ export default function Panel() {
         </div>
         <div className="check">
           <div>
-            Valide
+            Unlock
             <input
               className="checkandtitle"
               type="checkbox"
@@ -140,7 +149,7 @@ export default function Panel() {
             />
           </div>
           <div>
-            Invalide
+            Lock
             <input
               className="checkandtitle"
               type="checkbox"
@@ -159,11 +168,13 @@ export default function Panel() {
               )
               .map((badge) => (
                 <li>
-                  <img
-                    className="imgbadgeOk"
-                    src={badge.image}
-                    alt={badge.title}
-                  />
+                  <span className="hovertext" data-hover={badge.hover}>
+                    <img
+                      className="imgbadgeOk"
+                      src={badge.image}
+                      alt={badge.title}
+                    />
+                  </span>
                 </li>
               ))}
           </ul>
@@ -175,11 +186,13 @@ export default function Panel() {
               )
               .map((badge) => (
                 <li className="badgeNotValid">
-                  <img
-                    className="imgbadgeOk"
-                    src={badge.image}
-                    alt={badge.title}
-                  />
+                  <span className="hovertext" data-hover={badge.hover}>
+                    <img
+                      className="imgbadgeOk"
+                      src={badge.image}
+                      alt={badge.title}
+                    />
+                  </span>
                 </li>
               ))}
           </ul>
