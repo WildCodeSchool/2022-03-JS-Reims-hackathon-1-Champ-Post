@@ -63,7 +63,7 @@ body {
 }
 
 .divcam {
-  margin-top: 10vh;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
 }
@@ -72,8 +72,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+}
+
+.logoComp{
+  width: 250px;
 }
 
 li {
@@ -105,7 +107,7 @@ progress{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-top: 1rem;
 }
 
@@ -153,19 +155,72 @@ progress{
 .imgbadgecheck{
     position: absolute;
     top : 210px;
-    right: -10px;
+    right: 5px;
 }
 
 .imgbadgenocheck{
     position: absolute;
     top : 355px;
-    right: -13px;
+    right: 0px;
 }
 
-table td {
-  background-color: #e5e5e5;
-  border: solid black 1px;
+.histo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
 }
+
+.phisto{
+  margin: 1rem;
+}
+
+td, table, th{
+  background-color: #e5e5e5;
+  border: solid black 2px;
+  padding: 3px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 .badgeNotValid {
   filter: grayscale(1);
+}
+
+.mapping{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pmapping{
+  margin-bottom: 1rem;
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
