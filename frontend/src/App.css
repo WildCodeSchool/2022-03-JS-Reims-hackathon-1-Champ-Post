@@ -76,7 +76,7 @@ body {
   flex-wrap: wrap;
 }
 
-.logoComp{
+.logoComp {
   width: 250px;
 }
 
@@ -93,31 +93,27 @@ li {
 .qrcode {
   width: 20vw;
   position: absolute;
-  top : 20px;
+  top: 20px;
   right: 20px;
 }
 
 .dircom {
   width: 12vw;
   position: absolute;
-  top : 85px;
-  right: 33px;
+  top: 24px;
+  right: 284px;
 }
 
 .avatar {
   width: 30vw;
 }
 
-progress{
-    margin: 1rem;
-}
-
-.top-home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
+.top-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 .badgecheck {
@@ -144,69 +140,75 @@ progress{
   margin: auto;
 }
 
-.trichecentre2{
-    display: flex;
-    justify-content: center;
-    border: 2px black solid;
-    width: 80%;
-    margin: auto;
-    border-radius: 4px;
-    margin-bottom: 2rem;
+.trichecentre2 {
+  display: flex;
+  justify-content: center;
+  border: 2px black solid;
+  width: 95%;
+  margin: auto;
+  border-radius: 4px;
+  margin-bottom: 2rem;
 }
 
-.map{
-    border: 3px black solid;
+.map {
+  border: 3px black solid;
 }
 
-.imgbadgecheck, .imgbadgenocheck{
+.imgbadgecheck,
+.imgbadgenocheck {
   width: 20vw;
 }
 
-.imgbadgecheck{
-    position: absolute;
-    top : 220px;
-    right: 5px;
+.imgbadgecheck {
+  position: absolute;
+  top: 222px;
+  right: 5px;
 }
 
-.imgbadgenocheck{
-    position: absolute;
-    top : 375px;
-    right: 0px;
+.imgbadgenocheck {
+  position: absolute;
+  top: 375px;
+  right: 0px;
 }
 
-.histo{
+.histo {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.phisto{
+.phisto {
   margin: 1rem;
 }
 
-td, table, th{
-  background-color: #e5e5e5;
-  border: solid black 2px;
-  padding: 3px;
-  text-align: center;
+.histoirearray {
+  width: 95vw;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 2px solid black;
 }
 
-table {
-  border-collapse: collapse;
+th,
+td {
+  padding: 1em;
+  background: #ddd;
+  border-bottom: 1px solid white;
+  font-size: 1.2rem;
 }
 
 .badgeNotValid {
   filter: grayscale(1);
 }
 
-.mapping{
+.mapping {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pmapping{
+.pmapping {
   margin-bottom: 1rem;
 }
 
@@ -234,4 +236,9 @@ table {
 .hovertext:hover:before {
   opacity: 1;
   visibility: visible;
+}
+@media screen and (orientation: landscape) {
+  .avatar {
+    width: 10vw;
+  }
 }
