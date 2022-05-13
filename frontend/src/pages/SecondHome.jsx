@@ -43,7 +43,9 @@ export default function SecondHome() {
         <span className="hovertext" data-hover="Atteint le niveau 5">
           <img src="src/assets/badge/pigeon.png" alt="badge pigeon" />
         </span>
-        <img src="src/assets/badge/hibou.png" alt="badge hibou" />
+        <span className="hovertext" data-hover="Atteint le niveau 15">
+          <img src="src/assets/badge/hibou.png" alt="badge hibou" />
+        </span>
         <span className="hovertext" data-hover="25 compost (5/25)">
           <img src="src/assets/badge/arbre.png" alt="badge arbre" />
         </span>
