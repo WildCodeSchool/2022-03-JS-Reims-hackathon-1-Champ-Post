@@ -43,7 +43,9 @@ export default function Home() {
         <span className="hovertext" data-hover="Atteint le niveau 5">
           <img src="src/assets/badge/pigeon.png" alt="badge pigeon" />
         </span>
-        <img src="src/assets/badge/hibou.png" alt="badge hibou" />
+        <span className="hovertext" data-hover="Atteint le niveau 15">
+          <img src="src/assets/badge/hibou.png" alt="badge hibou" />
+        </span>
         <span className="hovertext" data-hover="5 compost (4/5)">
           <img src="src/assets/badge/bois.png" alt="badge arbre" />
         </span>
