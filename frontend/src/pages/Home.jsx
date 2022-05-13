@@ -19,6 +19,7 @@ export default function Home() {
           <img src="/src/assets/147142.png" alt="avatar" className="avatar" />
         </Link>
         <progress max="100" value="65" />
+        <p>Niveau 3</p>
         <p>Maitre du Compostage</p>
       </div>
       <Link to="panel">
