@@ -11,6 +11,9 @@ export default function Home() {
           className="qrcode"
         />
       </Link>
+      <Link to="compost">
+        <img src="/src/assets/dircompost.png" alt="?" className="dircom" />
+      </Link>
       <div className="top-home">
         <Link to="panel">
           <img src="/src/assets/147142.png" alt="avatar" className="avatar" />

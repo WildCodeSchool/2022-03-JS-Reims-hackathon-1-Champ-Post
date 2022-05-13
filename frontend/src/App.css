@@ -95,6 +95,13 @@ li {
   right: 20px;
 }
 
+.dircom {
+  width: 12vw;
+  position: absolute;
+  top : 85px;
+  right: 33px;
+}
+
 .avatar {
   width: 30vw;
 }
@@ -154,13 +161,13 @@ progress{
 
 .imgbadgecheck{
     position: absolute;
-    top : 210px;
+    top : 220px;
     right: 5px;
 }
 
 .imgbadgenocheck{
     position: absolute;
-    top : 355px;
+    top : 375px;
     right: 0px;
 }
 
